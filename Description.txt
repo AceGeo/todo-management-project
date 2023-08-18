@@ -1,0 +1,26 @@
+This project is a RESTful API that performs actions related to managing a set of tasks (todos). The term "CRUD" refers to the four basic operations involved in managing data:
+
+Create: Allows the creation of new records.
+Read: Enables data retrieval.
+Update: Permits the modification of existing records.
+Delete: Facilitates the removal of records.
+
+The TodoController provides the following actions:
+
+Create: The addTodo method is a POST action that allows the creation of a new task (todo) in the database.
+Read: The getTodo and getAllTodos methods are GET actions that allow reading a specific todo or all todos, respectively.
+Update: The updateTodo method is a PUT action that allows updating an existing task based on its ID.
+Delete: The deleteTodo method is a DELETE action that allows the deletion of an existing task based on its ID.
+Complete / Incomplete: The completeTodo and incompleteTodo methods are PATCH actions that allow marking a task as complete or incomplete.
+Thus, the TodoController provides full CRUD functionality for managing tasks (todos) through a REST API.
+
+A MySQL database has been created, and connectivity with the backend has been established. The database is automatically updated with changes made via Spring Boot.
+
+Regarding authentication and authorization, these are implemented using Spring Boot Security. This provides the necessary authorization for users and defines authentication parameters. Additionally, password encryption is implemented using the BCryptPasswordEncoder.
+
+Overall, this project demonstrates the implementation of a comprehensive task management system with RESTful endpoints, authentication, authorization, and database connectivity using the Spring Framework and Spring Boot.
+
+
+
+
+
